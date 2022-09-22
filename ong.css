@@ -23,6 +23,8 @@
     font-weight: 600;
     font-size: 30px;
     line-height: 38px;
+    color: #F1F1F1;
+    font-family: 'Quicksand';
 }
 
 .nav a{
@@ -51,7 +53,7 @@
 }
 
 .new table tr th{
-    padding: 25px;
+    padding: 8px;
     border: black 1px solid;
     background-color: #FFB800;
     font-family: 'Quicksand';
@@ -67,7 +69,7 @@
 }
 
 .new h4 a{
-    background-color: aqua;
+    background-color: aqua; 
     text-decoration: none;
     color: black;
     border: 1px solid black;
@@ -78,8 +80,48 @@
 }
 
 .new a{
-    text-decoration: none;
-    background-color: #00FF0A;
-    margin: 3px;
-    color: black;
+    margin: 5px;
+}
+
+.sidebar img{
+    height: 41px;
+    position: relative;
+    border-radius: 30px;
+    border: 4px solid #F1F1F1;
+    left: 80px;
+    top: 40px;
+}
+
+#aa{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#ae{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.new tr td #ae:hover{
+    background-color: red;
+    color: #F1F1F1;
+}
+
+.new tr td #aa:hover{
+    background-color: green;
+    color: #F1F1F1;
+}
+
+.new h4 a:hover{
+    background-color: #FFB800;
+    color: white;
+}
+
+.nav a:hover{
+    color: #FBF46D;
+    background-color: white;
+    padding: 10px;
+    border-radius: 7px;
 }

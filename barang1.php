@@ -22,7 +22,7 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <img src="sad.jpg" alt="swd" class="opo">
+            <img src="sad.jpg" alt="swd">
             <div class="nav">
                 <h1>Kswdx</h1>
                 <a href="new.php"><b>Data Siswa</b></a>
@@ -33,31 +33,31 @@
         </div>
         
         <div class="new">
-            <h1>Data Siswa</h1>
-            <h4><a href="siswa.php">[+] Tambah Baru</a></h4>
+            <h1>Data Barang</h1>
+            <h4><a href="barang.php">[+] Tambah Baru</a></h4>
             <table cellspacing='0'>
                 <tr>
                     <th>No</th>
-                    <th>NISN</th>
-                    <th>Nama Siswa</th>
-                    <th>Tanggal</th>
-                    <th>Barang Yang Dipinjam</th>
+                    <th>Nama Peminjam</th>
+                    <th>Stock Barang</th>
+                    <th>Nama Barang</th>
+                    <th>Jenis Barang</th>
                     <th>Aksi</th>
                 </tr>
                 <?php
-                $d = "SELECT * FROM sarpras";
-                $f = mysqli_query($connect, $d);
-                while($r = mysqli_fetch_array ($f)){
+                $d2 = "SELECT * FROM barang";
+                $f2 = mysqli_query($connect, $d2);
+                while($r2 = mysqli_fetch_array ($f2)){
                     echo"
                     <tr>
-                        <td>$r[no]</td>
-                        <td>$r[nisn]</td>
-                        <td>$r[nama_siswa]</td>
-                        <td>$r[tanggal]</td>
-                        <td>$r[barang_yang_dipinjam]</td>
+                        <td>$r2[no]</td>
+                        <td>$r2[nama_peminjam]</td>
+                        <td>$r2[stock_barang]</td>
+                        <td>$r2[nama_barang]</td>
+                        <td>$r2[jenis_barang]</td>
                         <td>
-                        <a href='edit.php?no=$r[no]'><i class='fa-solid fa-arrow-up-from-bracket' id='aa'></i></a>
-                        <a href='hapus.php?no=$r[no]'><i class='fa-solid fa-trash-can' id='ae'></i></a>
+                        <a href='editbarang.php?no=$r2[no]'><i class='fa-solid fa-arrow-up-from-bracket' id='aa'></i></a>
+                        <a href='hapusbarang.php?no=$r2[no]'><i class='fa-solid fa-trash-can' id='ae'></i></a>
                         </td>
                     </tr>
                     ";
